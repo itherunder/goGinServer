@@ -73,7 +73,7 @@ func UpdateATodo(c *gin.Context) {
 	}
 }
 
-func DeleteATod(c *gin.Context) {
+func DeleteATodo(c *gin.Context) {
 	id, ok := c.Params.Get("id")
 	if !ok {
 		c.JSON(http.StatusOK, gin.H{

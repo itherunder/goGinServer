@@ -24,7 +24,7 @@ func SetupRouter() *gin.Engine {
 		// 修改某一个待办事项
 		v1Group.PUT("/todo/:id", controller.UpdateATodo)
 		// 删除某一个待办事项
-		v1Group.DELETE("/todo/:id", controller.DeleteATod)
+		v1Group.DELETE("/todo/:id", controller.DeleteATodo)
 	}
 	return r
 }
